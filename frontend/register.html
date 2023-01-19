@@ -12,18 +12,19 @@
     <div id="formArea">
       <form id="registerForm">
         <label for="nameInput">Full Name</label>
-        <input type="text" id="nameInput" />
+        <input type="text" id="nameInput" required />
         <label for="emailInput">Email</label>
-        <input type="email" id="emailInput" />
-        <label for="password">Password</label>
-        <input type="password" id="passwordInput" />
-        <label for="password">Repeat Password</label>
-        <input type="password" id="passwordInput" />
+        <input type="email" id="emailInput" required />
+        <label for="passwordInput">Password</label>
+        <input type="password" id="passwordInput" required />
+        <label for="checkedPasswordInput">Repeat Password</label>
+        <input type="password" id="checkedPasswordInput" required />
 
         <button type="submit">Register</button>
       </form>
     </div>
+    <div id="result"></div>
     <p>Or perhaps, jus <a href="./login.html">login</a></p>
-    <script src="./login.js" type="module"></script>
+    <script src="./modules/register.js" type="module"></script>
   </body>
 </html>
