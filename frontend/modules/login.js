@@ -11,6 +11,7 @@ verifyUserForm.addEventListener("submit", async (event) => {
     const display = document.querySelector("#result");
 
     console.log(email, password); //
+
     const response = await fetch(ENDPOINT, {
       method: "POST",
       body: JSON.stringify({
@@ -20,9 +21,18 @@ verifyUserForm.addEventListener("submit", async (event) => {
       headers: { "Content-Type": "application/json" },
     });
 
+    const authData = await response.json();
+
     if (response.ok) {
       document.body.querySelector("#loginForm").reset();
       display.textContent = "You are logged in";
+      localStorage.setItem("accessToken", authData.accessToken);
+      console.log(`login token: ${authData.accessToken}`);
+    }
+
+    if (response.status >= 400) {
+      display.textContent = "Bad login or password";
+      return alert(authData?.error || response.statusText);
     }
   } catch (err) {
     console.log("Wrong name or pass"); //
@@ -30,4 +40,3 @@ verifyUserForm.addEventListener("submit", async (event) => {
     console.log(err.message);
   }
 });
-v;
