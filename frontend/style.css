@@ -1,66 +1,56 @@
-#formArea {
-  /*
-  display: block;
-  text-align: center;
-  width: 985px;
-  margin: 0 auto;
-  */
-  display: flex;
-  justify-content: center;
-  align-items: left;
-}
-
-#wrapper {
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-}
-
-h1 {
-  text-align: center;
-}
-
 h3 {
-  text-align: left;
+  padding-bottom: 20px;
+  font-size: 26px;
 }
-/*
-form {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  width: 300px;
-}
-*/
 label {
   font-weight: bold;
   margin-bottom: 10px;
 }
 input {
+  position: relative;
   display: block;
-  margin: 0 auto; /* center the element horizontally */
+  width: 400px;
   padding: 8px;
-  margin: 5px 0;
+  margin-top: 5px;
   margin-bottom: 19px;
 }
-/*
-input[type="text"] {
-  padding: 10px;
-  margin: 5px 0;
+.capitalLetter {
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
-input[type="number"] {
-  padding: 10px;
-  margin: 10px 0;
+#heading {
+  text-align: center;
+  color: #000000b6;
 }
 
-input[type="password"] {
+#wrapper {
+  margin: auto;
+  width: 30%;
+  /*border: 3px solid green;*/
   padding: 10px;
-  margin: 10px 0;
+  text-align: left;
 }
 
-input[type="email"] {
-  padding: 10px;
-  margin: 10px 0;
+#formArea {
+  /* border: 2px solid salmon;*/
+  margin: 50px;
 }
-*/
+
+#loginForm,
+#registerForm,
+#billForm,
+#groupForm {
+  width: 200px;
+}
+
+button {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  padding: 12px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

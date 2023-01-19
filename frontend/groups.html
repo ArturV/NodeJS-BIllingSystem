@@ -8,19 +8,28 @@
     <title>Groups</title>
   </head>
   <body>
-    <h1>Select your group</h1>
+    <header>
+      <div id="heading">
+        <img src="img/logo.png" alt="logo" />
+        <h1>Split Bill</h1>
+        <h2 class="capitalLetter">Best in Market</h2>
+      </div>
+    </header>
+    <h2>Select your group</h2>
     <div id="groupsSection">
 
     </div>
 
+    <div id="wrapper">
     <div id="formArea">
         <h3>Add group</h3>
-        <form id="billForm">
+        <form id="groupForm">
             <label for="groupIdInput">Group id:</label>
             <input id="groupIdInput" type="number" />
       
             <button type="submit">Add</button>
     </div>
+  </div>
     <script src="./modules/renderGroups.js" type="module"></script>
   </body>
 </html>

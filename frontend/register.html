@@ -8,23 +8,32 @@
     <title>Register form</title>
   </head>
   <body>
-    <h3>Register</h3>
-    <div id="formArea">
-      <form id="registerForm">
-        <label for="nameInput">Full Name</label>
-        <input type="text" id="nameInput" required />
-        <label for="emailInput">Email</label>
-        <input type="email" id="emailInput" required />
-        <label for="passwordInput">Password</label>
-        <input type="password" id="passwordInput" required />
-        <label for="checkedPasswordInput">Repeat Password</label>
-        <input type="password" id="checkedPasswordInput" required />
+    <header>
+      <div id="heading">
+        <img src="img/logo.png" alt="logo" />
+        <h1>Split Bill</h1>
+        <h2 class="capitalLetter">Best in Market</h2>
+      </div>
+    </header>
+    <div id="wrapper">
+      <div id="formArea">
+        <h3>Register</h3>
+        <form id="registerForm">
+          <label for="nameInput">Full Name</label>
+          <input type="text" id="nameInput" required />
+          <label for="emailInput">Email</label>
+          <input type="email" id="emailInput" required />
+          <label for="passwordInput">Password</label>
+          <input type="password" id="passwordInput" required />
+          <label for="checkedPasswordInput">Repeat Password</label>
+          <input type="password" id="checkedPasswordInput" required />
 
-        <button type="submit">Register</button>
-      </form>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+      <div id="result"></div>
+      <p>Or perhaps, just <a href="./login.html">login</a></p>
     </div>
-    <div id="result"></div>
-    <p>Or perhaps, jus <a href="./login.html">login</a></p>
     <script src="./modules/register.js" type="module"></script>
   </body>
 </html>
