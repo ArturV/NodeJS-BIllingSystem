@@ -1,0 +1,67 @@
+#formArea {
+  /*
+  display: block;
+  text-align: center;
+  width: 985px;
+  margin: 0 auto;
+  */
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+#wrapper {
+  display: block;
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: left;
+}
+/*
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 300px;
+}
+*/
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+input {
+  display: block;
+  margin: 0 auto; /* center the element horizontally */
+  padding: 8px;
+  margin: 5px 0;
+  margin-bottom: 19px;
+}
+/*
+input[type="text"] {
+  padding: 10px;
+  margin: 5px 0;
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+input[type="password"] {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+input[type="email"] {
+  padding: 10px;
+  margin: 10px 0;
+}
+*/

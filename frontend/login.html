@@ -4,21 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Login form</title>
   </head>
   <body>
-    <h3>Login</h3>
-    <div id="formArea">
-      <form id="loginForm">
-        <label for="emailInput">Email</label>
-        <input id="emailInput" />
-        <label for="password">Password</label>
-        <input type="password" id="passwordInput" />
+    <div id="wrapper">
+      <h3>Login</h3>
+      <div id="formArea">
+        <form id="loginForm">
+          <label for="emailInput">Email</label>
+          <input type="text" id="emailInput" />
+          <label for="password">Password</label>
+          <input type="password" id="passwordInput" />
 
-        <button type="submit">LogIn</button>
-      </form>
-      <p>Don't have an account? <a hre="./register.html">Register</a></p>
+          <button type="submit">LogIn</button>
+        </form>
+      </div>
+      <p>Don't have an account? <a href="./register.html">Register</a></p>
     </div>
     <script src="./login.js" type="module"></script>
     <script src="./verifyAuth.js" type="module"></script>

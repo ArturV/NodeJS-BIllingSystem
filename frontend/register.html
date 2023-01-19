@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Register form</title>
   </head>
   <body>
+    <h3>Register</h3>
     <div id="formArea">
-      <h3>Register</h3>
       <form id="registerForm">
         <label for="nameInput">Full Name</label>
-        <input id="nameInput" />
+        <input type="text" id="nameInput" />
         <label for="emailInput">Email</label>
-        <input id="emailInput" />
+        <input type="email" id="emailInput" />
         <label for="password">Password</label>
         <input type="password" id="passwordInput" />
         <label for="password">Repeat Password</label>
@@ -22,8 +22,8 @@
 
         <button type="submit">Register</button>
       </form>
-      <p>Or perhaps, jus <a hre="./login.html">login</a></p>
     </div>
+    <p>Or perhaps, jus <a href="./login.html">login</a></p>
     <script src="./login.js" type="module"></script>
   </body>
 </html>
