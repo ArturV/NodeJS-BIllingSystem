@@ -12,7 +12,7 @@ app.use(cors());
 app.use("/auth/", auth);
 
 app.get("/groups", getGroups);
-app.post("/groups", createNewGroup);
+app.post("/groups", createNewGroup); // pagal routus is salygu, nera front'o
 
 app.post("/accounts", addUserToGroup);
 
