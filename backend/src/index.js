@@ -4,6 +4,7 @@ import { PORT } from "./config.js";
 import auth from "../routes/auth.js";
 import { createNewGroup, getGroups } from "../routes/groups.js";
 import { addUserToGroup, userGroups } from "../routes/accounts.js";
+import { createNewBill, getBillbyId } from "../routes/bills.js";
 
 const app = express();
 
@@ -16,6 +17,9 @@ app.post("/groups", createNewGroup); // pagal routus is salygu, nera front'o
 
 app.post("/accounts", addUserToGroup);
 app.get("/accounts", userGroups);
+
+app.get("/bills/:group_id", getBillbyId);
+app.post("/bills", createNewBill);
 
 app.get("/", (_, res) => {
   res.send({ msg: "Server running" });
