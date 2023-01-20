@@ -8,7 +8,7 @@ groups - backend done, without test / front - render html in js
 
 +POST /register - gauname vartotojo duomenis, juos validuojame ir išsaugome į duomenų bazę.
 +POST  /login - gauname vartotojo duomenis, validuojame ir patikriname ar toks vartotojas egzistuoja pagal email ir password. Jei egzistuoja, sugeneruojame token su user_id ir jį grąžiname. Jei ne, grąžiname klaidą su žinute, kas buvo negerai.
-POST /groups - tik prisijungusiems vartotojams sukuriama nauja grupė groups lentelėje.
++POST /groups - tik prisijungusiems vartotojams sukuriama nauja grupė groups lentelėje.
 +GET /groups - grąžina groups lentelės informaciją (bus naudinga groups.html select laukui generuoti)
 POST /accounts - endpoint'as skirtas priskirti vartotoją kažkuriai grupei. Vartotojas paduoda group_id ir savo token, iš kurio galite pasiimti user_id. Sukuriamas įrašas lentelėje accounts.
 GET /accounts - paduoda visas prisijungusio vartotojo grupes (reikės JOIN operacijos su groups lentele). Vėl, user_id pasiimame iš token.
