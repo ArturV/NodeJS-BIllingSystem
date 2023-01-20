@@ -3,6 +3,7 @@ import cors from "cors";
 import { PORT } from "./config.js";
 import auth from "../routes/auth.js";
 import { createNewGroup, getGroups } from "../routes/groups.js";
+import { addUserToGroup } from "../routes/accounts.js";
 
 const app = express();
 
@@ -12,6 +13,8 @@ app.use("/auth/", auth);
 
 app.get("/groups", getGroups);
 app.post("/groups", createNewGroup);
+
+app.post("/accounts", addUserToGroup);
 
 app.get("/", (_, res) => {
   res.send({ msg: "Server running" });

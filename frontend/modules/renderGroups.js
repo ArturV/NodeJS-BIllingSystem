@@ -6,11 +6,11 @@ const renderGroups = async () => {
   const sectionContainer = document.body.querySelector("#groupsSection");
   sectionContainer.replaceChildren();
 
-  if (!contents.length) {
+  if (!contents) {
     const noDataEl = document.createElement("h4");
-    noDataEl.textContent = "No data in database";
+    noDataEl.textContent = "No data or server downn";
 
-    sectionContainer.append(noDataEl);
+    return sectionContainer.append(noDataEl);
   }
 
   contents.forEach((dataFromDB) => {

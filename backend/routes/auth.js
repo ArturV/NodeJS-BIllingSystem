@@ -67,6 +67,10 @@ router.post("/login", async (req, res) => {
       `SELECT * FROM users WHERE email=${mysql.escape(userData.email)}`
     );
 
+    const [data_userId] = await con.execute(
+      `SELECT id FROM users WHERE email=${mysql.escape(userData.email)}`
+    );
+
     await con.end();
 
     if (!data.length) {
@@ -83,7 +87,7 @@ router.post("/login", async (req, res) => {
         { id: data[0].id, email: data[0].email },
         jwtSecret
       );
-
+      // console.log(parseInt(JSON.stringify(data_userId[0])));
       return res.send({ message: "Succesfully logged in", accessToken }).end();
     }
 
