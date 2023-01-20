@@ -30,24 +30,6 @@ const renderGroups = async () => {
 
     groupContainer.append(titleH4, paragraph);
     sectionContainer.append(groupContainer);
-
-    /*
-
-    const titleContainer = document.createElement("div");
-    titleContainer.className = "titleContainer";
-
-    const idEl = document.createElement("h4");
-    const nameEl = document.createElement("p");
-
-    idEl.textContent = id;
-    nameEl.textContent = name;
-
-    titleContainer.append(id, nameEl);
-
-    groupContainer.append(titleContainer, name);
-
-    sectionContainer.append(groupContainer);
-     */
   });
 };
 

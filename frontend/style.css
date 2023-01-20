@@ -71,13 +71,23 @@ button {
   background-color: #fff;
 }
 
-#groupsSection {
+.output-cointainer #myGroupsSection {
+  width: 80%;
+  margin-top: 25px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+#groupsSection,
+#myGroupsSection {
   max-width: 1024px;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
-#groupsSection h4 {
+#groupsSection,
+#myGroupsSection h4 {
   text-align: center;
   font-weight: bold;
   color: black;

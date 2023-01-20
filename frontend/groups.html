@@ -15,15 +15,22 @@
         <h2 class="capitalLetter">Best in Market</h2>
       </div>
     </header>
+
     <div class="output-cointainer">
-    <h2>Select your group</h2>
+      <h2>Select your group</h2>
+      <div id="myGroupsSection"> 
+      </div>
+    </div>
+
+    <div class="output-cointainer">
+    <h2>Select new group</h2>
     <div id="groupsSection">
 
     </div>
 
     <div id="wrapper">
     <div id="formArea">
-        <h3>Add group</h3>
+        <h3>Add me to group</h3>
         <form id="groupForm">
             <label for="groupIdInput">Group id:</label>
             <input id="groupIdInput" type="number" />
@@ -32,7 +39,10 @@
     </div>
     </div>
 </div>
+
     <script src="./modules/renderGroups.js" type="module"></script>
+    <script src="./modules/renderUserGroups.js" type="module"></script>
     <script src="./modules/addUserToGroup.js" type="module"></script>
+
   </body>
 </html>
