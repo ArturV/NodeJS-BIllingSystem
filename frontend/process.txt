@@ -1,7 +1,7 @@
 login - work front / back + jwt
 register - work front / back 
 
-groups - backend done, without test / front - render html in js
+groups - backend done, / front - render html in js
 
 
 !!! padaryti public kataloga githube

@@ -7,7 +7,7 @@ const renderGroups = async () => {
   sectionContainer.replaceChildren();
 
   if (!contents.length) {
-    const noDataEl = document.createElement("h2");
+    const noDataEl = document.createElement("h4");
     noDataEl.textContent = "No data in database";
 
     sectionContainer.append(noDataEl);
@@ -16,25 +16,38 @@ const renderGroups = async () => {
   contents.forEach((dataFromDB) => {
     const { id, name } = dataFromDB;
 
-    const contentContainer = document.createElement("div");
-    contentContainer.className = "contentContainer";
+    const groupContainer = document.createElement("div");
+    groupContainer.className = "groupContainer";
+    groupContainer.style =
+      " border: 1px solid #CECECE; border-radius: 5px; margin: 18px";
+
+    const titleH4 = document.createElement("h4");
+    const paragraph = document.createElement("p");
+    paragraph.className = "groupName";
+
+    titleH4.textContent = `ID: ${id}`;
+    paragraph.textContent = name;
+
+    groupContainer.append(titleH4, paragraph);
+    sectionContainer.append(groupContainer);
+
+    /*
 
     const titleContainer = document.createElement("div");
     titleContainer.className = "titleContainer";
 
-    const idEl = document.createElement("h2");
+    const idEl = document.createElement("h4");
     const nameEl = document.createElement("p");
-    const contentEl = document.createElement("p");
 
     idEl.textContent = id;
-    nameEl.textContent = "abc";
-    contentEl.textContent = name;
+    nameEl.textContent = name;
 
     titleContainer.append(id, nameEl);
 
-    contentContainer.append(titleContainer, name);
+    groupContainer.append(titleContainer, name);
 
-    sectionContainer.append(contentContainer);
+    sectionContainer.append(groupContainer);
+     */
   });
 };
 

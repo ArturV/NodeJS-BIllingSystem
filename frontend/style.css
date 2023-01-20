@@ -21,7 +21,7 @@ input {
 
 #heading {
   text-align: center;
-  color: #000000b6;
+  color: #cecece;
 }
 
 #wrapper {
@@ -53,4 +53,38 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+.output-cointainer {
+  width: 100%;
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.output-cointainer #groupsSection {
+  width: 80%;
+  margin-top: 25px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+#groupsSection {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+#groupsSection h4 {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+
+.groupName {
+  text-align: center;
+  color: #cecece;
 }
