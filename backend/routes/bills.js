@@ -41,8 +41,9 @@ export const getBillbyId = async (req, res) => {
 export const createNewBill = async (req, res) => {
   const accessToken = req.headers.authorization?.split(" ")[1];
 
-  const id = req.body?.id?.trim();
-  const name = req.body?.name?.trim();
+  const group_id = +req.body.group_id;
+  const amount = req.body?.amount?.trim();
+  const description = req.body?.description?.trim();
 
   let payload = null;
 
@@ -58,11 +59,11 @@ export const createNewBill = async (req, res) => {
     }
     return res.status(400).end();
   }
-  /*
+
   try {
     const con = await mysql.createConnection(MYSQL_CONFIG);
     const [result] = await con.execute(
-      `INSERT INTO groupps (id, name) VALUES ('${id}','${name}')`
+      `INSERT INTO bills (group_id, amount, description) VALUES ('${group_id}','${amount}','${description}')`
     );
 
     await con.end();
@@ -71,5 +72,5 @@ export const createNewBill = async (req, res) => {
   } catch (error) {
     res.status(500).send(error).end();
     return console.error(error);
-  }*/
+  }
 };

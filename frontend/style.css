@@ -117,3 +117,20 @@ table {
 tbody tr:nth-child(odd) {
   background: #eee;
 }
+
+.meniu {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.meniu a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  /*padding: 14px 16px;*/
+  padding-left: 300px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
