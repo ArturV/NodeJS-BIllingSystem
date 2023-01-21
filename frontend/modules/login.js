@@ -24,9 +24,7 @@ verifyUserForm.addEventListener("submit", async (event) => {
     if (response.ok) {
       document.body.querySelector("#loginForm").reset();
 
-      // display.innerHTML = `<p> You are logged in, click: <a href="groups.html">Groups</a></p>`;
       localStorage.setItem("accessToken", authData.accessToken);
-      //console.log(`login token: ${authData.accessToken}`);
       return window.location.assign(`./groups.html`);
     }
 

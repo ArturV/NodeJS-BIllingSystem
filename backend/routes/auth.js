@@ -45,7 +45,6 @@ router.post("/register", async (req, res) => {
 
     return res.send(data);
   } catch (err) {
-    console.log(MYSQL_CONFIG);
     console.log(err);
     return res.status(500).send({ err: "Unexpected error, try again" });
   }
@@ -87,11 +86,10 @@ router.post("/login", async (req, res) => {
         { id: data[0].id, email: data[0].email },
         jwtSecret
       );
-      // console.log(parseInt(JSON.stringify(data_userId[0])));
+
       return res.send({ message: "Succesfully logged in", accessToken }).end();
     }
 
-    console.log("bad login");
     return res.status(400).send({ error: "Incorrect email or password" }).end();
   } catch (err) {
     return res.status(500).send({ error: "Unexpected error" });

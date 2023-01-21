@@ -61,7 +61,6 @@ export const userGroups = async (req, res) => {
 
   try {
     const con = await mysql.createConnection(MYSQL_CONFIG);
-    //const currentUser = payload.id;
 
     const query = `SELECT accounts.group_id, groupps.name FROM accounts INNER JOIN users ON users.id = accounts.user_id JOIN groupps ON groupps.id = accounts.group_id`;
 

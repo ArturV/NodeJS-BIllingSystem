@@ -27,13 +27,11 @@ input {
 #wrapper {
   margin: auto;
   width: 30%;
-  /*border: 3px solid green;*/
   padding: 10px;
   text-align: left;
 }
 
 #formArea {
-  /* border: 2px solid salmon;*/
   margin: 50px;
 }
 
@@ -127,7 +125,6 @@ tbody tr:nth-child(odd) {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  /*padding: 14px 16px;*/
   padding-left: 300px;
   padding-bottom: 15px;
   padding-top: 15px;

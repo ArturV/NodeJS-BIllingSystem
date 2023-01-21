@@ -15,7 +15,6 @@ addUserForm.addEventListener("submit", async (event) => {
   if (getPassword != getCheckedPassword) {
     return (display.textContent =
       "Password & Repeat Password must be the same");
-    // alert("Password & Repeat Password must be the same");
   } else {
     display.textContent = "";
     try {
@@ -35,6 +34,7 @@ addUserForm.addEventListener("submit", async (event) => {
         document.body.querySelector("#registerForm").reset();
         alert("User was created");
         display.textContent = "User was created";
+        return window.location.assign(`./login.html`);
       }
     } catch (error) {
       display.textContent = "Server does not response / failed to fetch";
