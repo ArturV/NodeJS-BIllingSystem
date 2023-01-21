@@ -98,3 +98,22 @@ button {
   text-align: center;
   color: #cecece;
 }
+
+#billsTable {
+  margin: 0 auto;
+}
+
+td,
+th {
+  padding: 1rem;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 800px;
+}
+
+tbody tr:nth-child(odd) {
+  background: #eee;
+}

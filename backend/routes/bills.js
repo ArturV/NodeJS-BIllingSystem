@@ -7,11 +7,6 @@ export const getBillbyId = async (req, res) => {
 
   const group_id = +req.params.group_id.trim();
 
-  //const params = (new URL(document.location)).searchParams
-  //parseInt(params.get('group_id'))
-
-  // const { group_id } = +req.query.group_id.trim();
-
   let payload = null;
 
   if (!accessToken) {
