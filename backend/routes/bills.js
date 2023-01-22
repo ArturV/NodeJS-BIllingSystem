@@ -24,7 +24,7 @@ export const getBillbyId = async (req, res) => {
 
   try {
     const con = await mysql.createConnection(MYSQL_CONFIG);
-    console.log({ group_id });
+
     const [result] = await con.execute(
       `SELECT * FROM bills WHERE group_id=${group_id}`
     );
@@ -71,6 +71,7 @@ export const createNewBill = async (req, res) => {
     return res.status(200).send(result).end();
   } catch (error) {
     res.status(500).send(error).end();
+
     return console.error(error);
   }
 };

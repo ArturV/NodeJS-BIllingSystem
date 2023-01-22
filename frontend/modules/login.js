@@ -30,10 +30,10 @@ verifyUserForm.addEventListener("submit", async (event) => {
 
     if (response.status >= 400) {
       display.textContent = "Bad login or password";
+
       return alert(authData?.error || response.statusText);
     }
   } catch (err) {
-    console.log("Wrong name or pass"); //
     display.textContent = "Wrong name or pass";
     console.log(err.message);
   }
